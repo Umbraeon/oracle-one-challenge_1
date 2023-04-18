@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(180deg, #6E1EF1 0%, #34244D 100%);
+  z-index: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.logo img {
+  width: 24px; 
+  height: auto;
+}
+
+.box1 {
+  position: relative;
+  width: 35vw;
+  max-width: 35vw;
+  height: 70vh;
+  left: 10vw;
+  top: 5vh;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid #000000;
+  border-radius: 18px;
+  overflow-wrap: break-word;
+  z-index: 2;
+}
+
+textarea {
+  width: 100%; 
+  height: 100%; 
+  resize: none;
+  border: 0.5px solid #000000;
+  border-radius: 18px; 
+}
+
+img[alt="dica"] {
+  position: relative;
+  left: 38%;
+  top: -5.8%;
+  opacity: 0.7;
+  user-select: none;
+}
+p[alt="texto"] {
+  position: relative;
+  left: 43%;
+  top: -14%;
+  color: #656060;
+  opacity: 0.7;
+  user-select: none;
+}
+
+.gif {  
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  max-width: 50vw;
+  max-height: 50vh;
+  background-image: url(cat.gif);
+  background-size: cover;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  user-select: none;
+  pointer-events: none;
+  
+}
+
+.button1 {
+  position: absolute;
+  width: 16vw;
+  max-width: 16vw;
+  height: 6vh;
+  max-height: 6vh;
+  left: 1%;
+  top: 105%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.button1:hover {
+  box-shadow: 0px 0px 5px #000000;
+  color: #8330C5;
+}
+
+.button1:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.button1::before {
+  content: "Criptografar";
+  font-size: 15px;
+  text-align: center;
+  line-height: 6vh;
+}
+
+.button2 {
+  position: absolute;
+  width: 16vw;
+  max-width: 16vw;
+  height: 6vh;
+  max-height: 6;
+  left: 53%;
+  top: 105%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  z-index: 2;
+}
+.button2:hover {
+  box-shadow: 0px 0px 5px #000000;
+  color: #A41DE3;
+}
+.button2:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.button2::before {
+  content: "Descriptografar";
+  font-size: 15px;
+  text-align: center;
+  line-height: 6vh;
+
+}
+
+.box2 {
+  position: relative;
+  width: 35vw;
+  max-width: 35vw;
+  height: 70vh;
+  left: 54vw;
+  top: 5vh;
+  background: rgba(255, 255, 255, 0.9);
+  border: 0.5px solid #000000;
+  border-radius: 18px;
+  padding: 20px;
+  position: absolute;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  max-width: 70%;
+  max-height: 60%;
+  user-select: none;
+  pointer-events: none;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+#mensagem {
+  position: absolute;
+  top: 0;
+}
+
+.copy img {
+  display: inline-block; 
+  position: fixed;
+  top: 65%;
+  right: 13%;
+  width: 40px;
+  height: 40px;
+  transition: box-shadow 0.3s ease; 
+}
+
+.copy img:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.copy {
+  position: absolute;
+  z-index: 3;
+}
+
+.message {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  left: 0;
+  right: 0;
+}
+
+
+footer .text {
+  margin-right: 10px;
+  color: #FFFFFF;
+  pointer-events: none;
+  user-select: none;
+  font-family: "Baufra", sans-serif;
+  font-weight: 700;
+}
+
+.visually-hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+footer .icons {
+  display: flex;
+  filter: invert(1);
+  user-select: none;
+
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  color: #FFFFFF;
+  user-select: none;
+
+}
